@@ -45,25 +45,33 @@
 
 - Số đo tự động: ba lượt đều chọn cùng cấu hình và đạt chi phí bằng oracle trong lưới đã thử. Điều này chỉ mô tả ba frame A, chưa đo khả năng tổng quát trên B.
 
-- Cấu hình có ổn định trên từng frame không? Vì sao tôi vẫn chọn (hoặc không chọn) nó: ...
+- Đối chiếu số liệu có hỗ trợ AI: cả ba lượt leave-one-out chọn 0.5/0; chi phí từng frame vẫn khác nhau (11.4, 3.8, 4.8). Giữ cấu hình đã chọn trên A để đánh giá B, không tune lại theo B.
 
 ## 3. Trước/sau (bước 8)
 
 ![so sánh s01f44](../../d14_217/compare/s01f44.jpg)
 
 - Số đo sweep: chi phí gốc 34.6; cấu hình chọn 20.0; mức giảm 42.2% trên tập A. Đây là chi phí theo công thức, không phải thời gian lao động. Cấu hình dự đoán 0.4/5 có chi phí 23.6, giảm 31.8%.
-- Dự đoán ở mục 1 đúng hay sai? Giải thích bằng số box xóa/thêm/sửa: ...
+- Đối chiếu định lượng có hỗ trợ AI: dự đoán tăng ngưỡng làm giảm chi phí đúng trên A; cấu hình dự đoán 0.4/5 chưa tối ưu trong lưới. So với gốc, số xóa giảm 72 → 27, sửa giảm 16 → 13, nhưng thêm tăng 5 → 9. Cấu hình chọn 0.5/0 đạt chi phí thấp hơn (20.0), với xóa/thêm/sửa = 10/11/12.
 
 ## 4. Tập B
+
+- Task CVAT `D14-217-B`: task/job 29, 12 frame. Sau rà soát có hỗ trợ AI/API: 161 → 128 box; xóa 42 dự đoán thừa, thêm 9 vật thể, cập nhật 98 hộp có sẵn (bao gồm thay đổi ghi chú/cờ; không đồng nghĩa 98 lỗi hình học theo hàm chi phí). Không có Track.
+- Dùng camera và LiDAR đối chiếu hộp; thêm Bus/Truck, người và xe hai bánh bị sót; sửa lớp/kích thước/đáy ở các trường hợp đủ căn cứ. Chi tiết trong `d14_217/review_B_audit.json`.
+- Còn 9 hộp LOW_VISIBILITY chưa xác minh đủ biên vật thể: s03f21 (`pp_id` 9, 11); s05f05 (11, 13, 14, 16, 17); s05f31 (2, 13). Giữ hình học và đánh dấu che khuất. Nhãn tham chiếu B là bản làm việc có hỗ trợ AI, cần người học kiểm trước khi nộp; số đo dưới đây là tạm thời theo bản này.
 
 Số đo từ `scripts/pp_prelabel.py --frames d14_217/frames_B.txt --config d14_217/best_config.json --gt d14_217/ref_B.json`:
 
 | Xóa | Thêm | Sửa | Chi phí |
 |---:|---:|---:|---:|
-| | | | |
+| 43 | 10 | 37 | 41.4 |
 
-- Loại box tốn công sửa nhất ở tập B: ...
+- Các lỗi đã ghi nhận: box nhầm cây/cột/biển báo, xe cao hoặc xe chở hàng bị gán Car, người và xe hai bánh bị sót. Các hộp bị che khuất cần kiểm lại vì kích thước phần khuất phải suy luận. Chi phí công thức không đo thời gian sửa từng loại.
 
 ## 5. Giới hạn
 
-- Nêu ít nhất 2 giới hạn (ví dụ: chỉ 3 frame tune; model KITTI không có Truck/Bus; chi phí là công thức, chưa phải thời gian sửa thật): ...
+- Chỉ có ba frame A để tune; leave-one-out trên ba frame không đủ chứng minh tính tổng quát. Không dùng B để chọn lại cấu hình.
+- Model huấn luyện trên KITTI khác miền dữ liệu VinFast; Truck/Bus và vật thể nhỏ/xa có thể bị nhầm hoặc sót.
+- Chi phí là công thức trọng số, không phải thời gian sửa thực tế.
+- Nhãn A/B có hỗ trợ AI và suy luận phần bị che; B còn 9 trường hợp LOW_VISIBILITY. Kết quả phụ thuộc chất lượng nhãn tham chiếu, chưa phải đánh giá với ground truth độc lập.
+- Các đoạn đối chiếu trong báo cáo có hỗ trợ AI; người học cần kiểm tra nội dung và yêu cầu của lớp trước khi nộp.

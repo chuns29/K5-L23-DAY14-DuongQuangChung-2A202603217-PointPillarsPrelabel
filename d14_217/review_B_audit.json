@@ -1,0 +1,935 @@
+{
+ "method": "AI-assisted camera/LiDAR review and CVAT API edits; not independently human-verified ground truth",
+ "job_id": 29,
+ "before_count": 161,
+ "after_count": 128,
+ "deleted": 42,
+ "created": 9,
+ "updated_existing": 98,
+ "actions": [
+  {
+   "action": "delete",
+   "id": 3078,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3084,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3090,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3093,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3095,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3096,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3104,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3105,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3106,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3107,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3120,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3122,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3136,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3137,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3143,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3145,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3146,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3148,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3149,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3150,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3152,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3172,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3194,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3199,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3201,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3203,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3209,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3210,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3215,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3219,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3220,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3222,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3224,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3226,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3227,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3228,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3229,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3233,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3234,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3236,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3237,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "delete",
+   "id": 3238,
+   "reason": "Camera-projection review: vegetation, pole/sign, barrier or fixed structure rather than annotated road user"
+  },
+  {
+   "action": "update",
+   "id": 3079,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3080,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3081,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3082,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3085,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3087,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3088,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3089,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3091,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3092,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3094,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3097,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3098,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3099,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3100,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3101,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3102,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3108,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3110,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3111,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3112,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3113,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3114,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3115,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3116,
+   "reason": "Person/rider ground contact"
+  },
+  {
+   "action": "update",
+   "id": 3117,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3118,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3119,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3123,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3124,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3127,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3129,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3130,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3131,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "flag",
+   "id": 3132,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "update",
+   "id": 3133,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "flag",
+   "id": 3134,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "update",
+   "id": 3135,
+   "reason": "Person/rider ground contact"
+  },
+  {
+   "action": "update",
+   "id": 3139,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3140,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3142,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3144,
+   "reason": "Person/rider ground contact"
+  },
+  {
+   "action": "update",
+   "id": 3147,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3151,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3154,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3155,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3156,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3158,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3159,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3160,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3161,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3162,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3163,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3164,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3166,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3167,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3169,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3171,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3173,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3174,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3175,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3176,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3178,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3180,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3181,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3182,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3183,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3184,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3188,
+   "reason": "Person/rider ground contact"
+  },
+  {
+   "action": "update",
+   "id": 3189,
+   "reason": "Person/rider ground contact"
+  },
+  {
+   "action": "update",
+   "id": 3190,
+   "reason": "Person/rider ground contact"
+  },
+  {
+   "action": "update",
+   "id": 3191,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3192,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3193,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3195,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3196,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3197,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3200,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "flag",
+   "id": 3202,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "flag",
+   "id": 3204,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "flag",
+   "id": 3205,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "update",
+   "id": 3206,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "flag",
+   "id": 3207,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "flag",
+   "id": 3208,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "update",
+   "id": 3212,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3213,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "flag",
+   "id": 3214,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "update",
+   "id": 3216,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3217,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3218,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3221,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3223,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "flag",
+   "id": 3225,
+   "reason": "Low visibility; geometric values retained"
+  },
+  {
+   "action": "update",
+   "id": 3231,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3232,
+   "reason": "Ground contact / envelope; camera-checked visible surface"
+  },
+  {
+   "action": "update",
+   "id": 3121,
+   "reason": "Advertising cargo van: envelope enlarged to include high roof; full length partly occluded"
+  },
+  {
+   "action": "update",
+   "id": 3153,
+   "reason": "Helmeted scooter rider visible in cam03; previous Car box spanned road verge"
+  },
+  {
+   "action": "update",
+   "id": 3235,
+   "reason": "Green municipal goods truck visible in cam08; previous passenger-car dimensions too small"
+  },
+  {
+   "action": "update",
+   "id": 3082,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3087,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3101,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3114,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3130,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3131,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3140,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3155,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3158,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3176,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3182,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3184,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3192,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3196,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3197,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3218,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "update",
+   "id": 3232,
+   "reason": "Camera-specific roof / height correction"
+  },
+  {
+   "action": "create",
+   "frame": 0,
+   "label": "Bus",
+   "reason": "Red BYD bus visible across cam01/cam03/cam06; dense rear face around y=-2.4, roof z=1.54; front extent inferred"
+  },
+  {
+   "action": "create",
+   "frame": 1,
+   "label": "Cyclist",
+   "reason": "White-helmet scooter rider in cam03; 28 LiDAR body points at 38-39 m"
+  },
+  {
+   "action": "create",
+   "frame": 4,
+   "label": "Pedestrian",
+   "reason": "Person pulling luggage across crossing in cam07; dense body returns near (-9.8,0.45)"
+  },
+  {
+   "action": "create",
+   "frame": 6,
+   "label": "Cyclist",
+   "reason": "Scooter rider behind ego in cam09; 218 body returns at 13-14 m"
+  },
+  {
+   "action": "create",
+   "frame": 8,
+   "label": "Cyclist",
+   "reason": "Helmeted scooter rider in cam03; body returns at (-5.8,-33.2)"
+  },
+  {
+   "action": "create",
+   "frame": 8,
+   "label": "Pedestrian",
+   "reason": "Yellow-clad road worker in cam03; person pushing cart; body returns at 39 m"
+  },
+  {
+   "action": "create",
+   "frame": 8,
+   "label": "Pedestrian",
+   "reason": "Second yellow-clad road worker beside cart in cam03; associated returns near (-8.6,-38.8)"
+  },
+  {
+   "action": "create",
+   "frame": 9,
+   "label": "Truck",
+   "reason": "Large green dump truck visible in cam09; dense front face y=9.12, upper returns z=1.38; unseen rear length inferred"
+  },
+  {
+   "action": "create",
+   "frame": 11,
+   "label": "Car",
+   "reason": "Blue passenger van visible in cam01/cam03/cam07; dense side returns x=-3, y=-10.3..-5.9; full width inferred"
+  }
+ ],
+ "remaining_low_visibility_ids": [
+  3132,
+  3134,
+  3202,
+  3204,
+  3205,
+  3207,
+  3208,
+  3214,
+  3225
+ ],
+ "remaining_low_visibility": [
+  {
+   "frame": "s03f21",
+   "cvat_frame_number": 5,
+   "api_id": 3132,
+   "pp_id": "9",
+   "class": "Cyclist",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s03f21",
+   "cvat_frame_number": 5,
+   "api_id": 3134,
+   "pp_id": "11",
+   "class": "Car",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s05f05",
+   "cvat_frame_number": 10,
+   "api_id": 3202,
+   "pp_id": "11",
+   "class": "Car",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s05f05",
+   "cvat_frame_number": 10,
+   "api_id": 3204,
+   "pp_id": "13",
+   "class": "Car",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s05f05",
+   "cvat_frame_number": 10,
+   "api_id": 3205,
+   "pp_id": "14",
+   "class": "Car",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s05f05",
+   "cvat_frame_number": 10,
+   "api_id": 3207,
+   "pp_id": "16",
+   "class": "Cyclist",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s05f05",
+   "cvat_frame_number": 10,
+   "api_id": 3208,
+   "pp_id": "17",
+   "class": "Cyclist",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s05f31",
+   "cvat_frame_number": 11,
+   "api_id": 3225,
+   "pp_id": "13",
+   "class": "Car",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  },
+  {
+   "frame": "s05f31",
+   "cvat_frame_number": 11,
+   "api_id": 3214,
+   "pp_id": "2",
+   "class": "Car",
+   "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
+  }
+ ]
+}
