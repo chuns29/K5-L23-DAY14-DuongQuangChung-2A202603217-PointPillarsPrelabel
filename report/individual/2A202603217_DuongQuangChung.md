@@ -6,10 +6,12 @@
 
 ## 1. Dự đoán trước sweep (bước 5b)
 
-Ghi **trước** khi chạy `scripts/pp_sweep.py`, rồi commit và push ngay (lịch sử commit là bằng chứng thời điểm viết). Không sửa phần này sau khi có kết quả.
+> Nội dung dự đoán dưới đây do AI hỗ trợ soạn từ ảnh và số đo tập A theo yêu cầu của người học; không trình bày là nhận xét tự viết độc lập. Được ghi trước khi chạy sweep và không sửa lại theo kết quả sweep.
 
-- Tham số tôi nghĩ giảm công sửa nhiều nhất: ...
-- Vì sao (nhìn ảnh BEV tập A: box thừa nhiều hay box sót nhiều?): ...
+- Tham số dự đoán giảm công sửa nhiều nhất: tăng `score_thr` từ `0.1` lên `0.4`; thử kết hợp `min_points=5` thay cho `0`.
+- Lý do: cấu hình gốc trên ba frame cần xóa 72 box, thêm 5 và sửa 16. Đối chiếu camera cho thấy nhiều dự đoán thừa nằm trên cây, bụi hoa và hàng rào. Tăng ngưỡng tin cậy có thể loại bớt các dự đoán yếu; yêu cầu ít nhất 5 điểm trong hộp có thể loại thêm các hộp quá thưa điểm.
+- Dự đoán: hai thay đổi trên có thể giảm chi phí tổng, nhưng chưa biết cấu hình nào tốt nhất. Thêm một box bị sót có trọng số `1.0`, còn xóa một box thừa chỉ có trọng số `0.3`, nên mất thêm một vật thật có thể xóa hết lợi ích của việc loại ba box thừa. Các vật xa, nhỏ hoặc bị che khuất có thể bị lọc nhầm. Vì vậy cần so sánh số xóa/thêm/sửa và leave-one-out sau sweep, không kết luận chỉ dựa vào số box giảm.
+- Giới hạn của dự đoán: tập A chỉ có ba frame, nhãn tham chiếu có hỗ trợ AI/API và sáu box khó xác nhận đã bị loại theo quyết định của người học. Chi phí đo được phụ thuộc bộ tham chiếu này, không chứng minh cấu hình sẽ tốt trên mọi cảnh.
 
 ## 2. Tập A: sửa nhãn và tune
 
