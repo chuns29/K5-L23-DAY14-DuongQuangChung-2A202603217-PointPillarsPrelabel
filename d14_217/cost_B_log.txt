@@ -1,14 +1,15 @@
-frame     box  lớp
-s02f00      7  {'Car': 6, 'Cyclist': 1}  cảnh báo kích thước=0  6.4s  | xóa 2 thêm 1 sửa 2 → chi phí 2.6
-s02f32     12  {'Car': 11, 'Cyclist': 1}  cảnh báo kích thước=1  6.1s  | xóa 4 thêm 1 sửa 4 → chi phí 4.2
-s02f52     13  {'Car': 11, 'Pedestrian': 2}  cảnh báo kích thước=0  6.2s  | xóa 4 thêm 0 sửa 4 → chi phí 3.2
-s03f01     13  {'Car': 12, 'Cyclist': 1}  cảnh báo kích thước=0  5.9s  | xóa 2 thêm 0 sửa 5 → chi phí 3.1
-s03f21     16  {'Car': 14, 'Cyclist': 1, 'Pedestrian': 1}  cảnh báo kích thước=0  6.1s  | xóa 2 thêm 1 sửa 2 → chi phí 2.6
-s03f48     15  {'Car': 8, 'Cyclist': 7}  cảnh báo kích thước=1  5.9s  | xóa 8 thêm 1 sửa 3 → chi phí 4.9
-s04f17     19  {'Car': 18, 'Cyclist': 1}  cảnh báo kích thước=0  6.2s  | xóa 1 thêm 1 sửa 6 → chi phí 4.3
-s04f40      8  {'Car': 8}  cảnh báo kích thước=0  5.9s  | xóa 0 thêm 0 sửa 3 → chi phí 1.5
-s04f59     10  {'Car': 7, 'Cyclist': 3}  cảnh báo kích thước=0  5.8s  | xóa 0 thêm 3 sửa 0 → chi phí 3.0
-s05f05     21  {'Car': 16, 'Cyclist': 5}  cảnh báo kích thước=0  5.9s  | xóa 6 thêm 1 sửa 5 → chi phí 5.3
-s05f31     17  {'Car': 15, 'Cyclist': 2}  cảnh báo kích thước=0  6.2s  | xóa 8 thêm 0 sửa 2 → chi phí 3.4
-s05f46     10  {'Car': 6, 'Cyclist': 4}  cảnh báo kích thước=0  5.8s  | xóa 6 thêm 1 sửa 1 → chi phí 3.3
-TỔNG (12 frame có nhãn): GT 128, dự đoán 161, khớp 118, xóa 43, thêm 10, sửa 37 → chi phí 41.4
+Recomputed with vf_pp.core.correction_cost from unchanged cached d14_217/pred_B.json and updated ref_B.json.
+Cache verified against previous run: delete=43 add=10 edit=37 cost=41.4.
+s02f00: GT 6, pred 7, delete 2, add 1, edit 2, cost 2.6
+s02f32: GT 9, pred 12, delete 4, add 1, edit 4, cost 4.2
+s02f52: GT 9, pred 13, delete 4, add 0, edit 4, cost 3.2
+s03f01: GT 11, pred 13, delete 2, add 0, edit 5, cost 3.1
+s03f21: GT 13, pred 16, delete 4, add 1, edit 2, cost 3.2
+s03f48: GT 8, pred 15, delete 8, add 1, edit 3, cost 4.9
+s04f17: GT 19, pred 19, delete 1, add 1, edit 6, cost 4.3
+s04f40: GT 8, pred 8, delete 0, add 0, edit 3, cost 1.5
+s04f59: GT 13, pred 10, delete 0, add 3, edit 0, cost 3.0
+s05f05: GT 11, pred 21, delete 11, add 1, edit 5, cost 6.8
+s05f31: GT 7, pred 17, delete 10, add 0, edit 2, cost 4.0
+s05f46: GT 5, pred 10, delete 6, add 1, edit 1, cost 3.3
+TOTAL: {"gt": 119, "pred": 161, "match": 109, "delete": 52, "add": 10, "edit": 37, "cost": 44.1}

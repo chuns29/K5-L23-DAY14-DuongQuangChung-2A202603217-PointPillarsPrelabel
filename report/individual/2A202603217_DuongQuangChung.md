@@ -56,15 +56,15 @@
 
 ## 4. Tập B
 
-- Task CVAT `D14-217-B`: task/job 29, 12 frame. Sau rà soát có hỗ trợ AI/API: 161 → 128 box; xóa 42 dự đoán thừa, thêm 9 vật thể, cập nhật 98 hộp có sẵn (bao gồm thay đổi ghi chú/cờ; không đồng nghĩa 98 lỗi hình học theo hàm chi phí). Không có Track.
+- Task CVAT `D14-217-B`: task/job 29, 12 frame. Sau rà soát có hỗ trợ AI/API: 161 → 119 box; xóa 42 dự đoán thừa và 9 hộp LOW_VISIBILITY theo yêu cầu người học, thêm 9 vật thể, cập nhật 98 hộp có sẵn (bao gồm thay đổi ghi chú/cờ; không đồng nghĩa 98 lỗi hình học theo hàm chi phí). Không có Track.
 - Dùng camera và LiDAR đối chiếu hộp; thêm Bus/Truck, người và xe hai bánh bị sót; sửa lớp/kích thước/đáy ở các trường hợp đủ căn cứ. Chi tiết trong `d14_217/review_B_audit.json`.
-- Còn 9 hộp LOW_VISIBILITY chưa xác minh đủ biên vật thể: s03f21 (`pp_id` 9, 11); s05f05 (11, 13, 14, 16, 17); s05f31 (2, 13). Giữ hình học và đánh dấu che khuất. Nhãn tham chiếu B là bản làm việc có hỗ trợ AI, cần người học kiểm trước khi nộp; số đo dưới đây là tạm thời theo bản này.
+- Đã xóa 9 hộp LOW_VISIBILITY theo yêu cầu người học: s03f21 (`pp_id` 9, 11); s05f05 (11, 13, 14, 16, 17); s05f31 (2, 13). Đây là quyết định loại hộp khó xác nhận, không chứng minh vật thể không tồn tại. Nhãn B có hỗ trợ AI và cần người học kiểm trước khi nộp.
 
-Số đo từ `scripts/pp_prelabel.py --frames d14_217/frames_B.txt --config d14_217/best_config.json --gt d14_217/ref_B.json`:
+Số đo tính lại bằng `vf_pp.core.correction_cost` từ dự đoán đã lưu `pred_B.json` (cấu hình đã chọn trên A) và `ref_B.json` sau khi xóa 9 hộp; không chạy lại hay tune model:
 
 | Xóa | Thêm | Sửa | Chi phí |
 |---:|---:|---:|---:|
-| 43 | 10 | 37 | 41.4 |
+| 52 | 10 | 37 | 44.1 |
 
 - Các lỗi đã ghi nhận: box nhầm cây/cột/biển báo, xe cao hoặc xe chở hàng bị gán Car, người và xe hai bánh bị sót. Các hộp bị che khuất cần kiểm lại vì kích thước phần khuất phải suy luận. Chi phí công thức không đo thời gian sửa từng loại.
 
@@ -73,5 +73,5 @@ Số đo từ `scripts/pp_prelabel.py --frames d14_217/frames_B.txt --config d14
 - Chỉ có ba frame A để tune; leave-one-out trên ba frame không đủ chứng minh tính tổng quát. Không dùng B để chọn lại cấu hình.
 - Model huấn luyện trên KITTI khác miền dữ liệu VinFast; Truck/Bus và vật thể nhỏ/xa có thể bị nhầm hoặc sót.
 - Chi phí là công thức trọng số, không phải thời gian sửa thực tế.
-- Nhãn A/B có hỗ trợ AI và suy luận phần bị che; B còn 9 trường hợp LOW_VISIBILITY. Kết quả phụ thuộc chất lượng nhãn tham chiếu, chưa phải đánh giá với ground truth độc lập.
+- Nhãn A/B có hỗ trợ AI và suy luận phần bị che; 9 hộp LOW_VISIBILITY ở B đã bị loại theo quyết định người học, có thể ảnh hưởng số đo bỏ sót/thừa. Kết quả phụ thuộc chất lượng nhãn tham chiếu, chưa phải đánh giá với ground truth độc lập.
 - Các đoạn đối chiếu trong báo cáo có hỗ trợ AI; người học cần kiểm tra nội dung và yêu cầu của lớp trước khi nộp.

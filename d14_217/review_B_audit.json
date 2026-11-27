@@ -2,8 +2,8 @@
  "method": "AI-assisted camera/LiDAR review and CVAT API edits; not independently human-verified ground truth",
  "job_id": 29,
  "before_count": 161,
- "after_count": 128,
- "deleted": 42,
+ "after_count": 119,
+ "deleted": 51,
  "created": 9,
  "updated_existing": 98,
  "actions": [
@@ -845,20 +845,64 @@
    "frame": 11,
    "label": "Car",
    "reason": "Blue passenger van visible in cam01/cam03/cam07; dense side returns x=-3, y=-10.3..-5.9; full width inferred"
+  },
+  {
+   "action": "delete",
+   "id": 3132,
+   "frame": 4,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3134,
+   "frame": 4,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3202,
+   "frame": 9,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3204,
+   "frame": 9,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3205,
+   "frame": 9,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3207,
+   "frame": 9,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3208,
+   "frame": 9,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3225,
+   "frame": 10,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
+  },
+  {
+   "action": "delete",
+   "id": 3214,
+   "frame": 10,
+   "reason": "User explicitly requested removal of the nine flagged LOW_VISIBILITY boxes; removal does not establish object absence"
   }
  ],
- "remaining_low_visibility_ids": [
-  3132,
-  3134,
-  3202,
-  3204,
-  3205,
-  3207,
-  3208,
-  3214,
-  3225
- ],
- "remaining_low_visibility": [
+ "remaining_low_visibility_ids": [],
+ "removed_low_visibility_by_user_request": [
   {
    "frame": "s03f21",
    "cvat_frame_number": 5,
@@ -931,5 +975,6 @@
    "class": "Car",
    "note": "LOW_VISIBILITY: camera projection blocked by foreground object/vegetation; no reliable complete envelope; geometry retained"
   }
- ]
+ ],
+ "remaining_low_visibility": []
 }
