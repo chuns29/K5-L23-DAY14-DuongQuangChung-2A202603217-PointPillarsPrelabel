@@ -1,0 +1,15 @@
+frame     box  lớp
+s02f00      7  {'Car': 6, 'Cyclist': 1}  cảnh báo kích thước=0  6.2s
+s02f32     12  {'Car': 11, 'Cyclist': 1}  cảnh báo kích thước=1  6.0s
+s02f52     13  {'Car': 11, 'Pedestrian': 2}  cảnh báo kích thước=0  9.5s
+s03f01     13  {'Car': 12, 'Cyclist': 1}  cảnh báo kích thước=0  7.6s
+s03f21     16  {'Car': 14, 'Cyclist': 1, 'Pedestrian': 1}  cảnh báo kích thước=0  7.0s
+s03f48     15  {'Car': 8, 'Cyclist': 7}  cảnh báo kích thước=1  6.7s
+s04f17     19  {'Car': 18, 'Cyclist': 1}  cảnh báo kích thước=0  6.3s
+s04f40      8  {'Car': 8}  cảnh báo kích thước=0  7.2s
+s04f59     10  {'Car': 7, 'Cyclist': 3}  cảnh báo kích thước=0  6.9s
+s05f05     21  {'Car': 16, 'Cyclist': 5}  cảnh báo kích thước=0  9.8s
+s05f31     17  {'Car': 15, 'Cyclist': 2}  cảnh báo kích thước=0  6.7s
+s05f46     10  {'Car': 6, 'Cyclist': 4}  cảnh báo kích thước=0  6.8s
+Đã ghi d14_217/pred_B.json
+Đã vẽ 12 ảnh vào d14_217\png_B/
