@@ -31,17 +31,27 @@
 | Cấu hình | Xóa | Thêm | Sửa | Chi phí |
 |---|---:|---:|---:|---:|
 | Gốc (`score_thr=0.1`, `min_points=0`) | 72 | 5 | 16 | 34.6 |
-| `best_config.json` | | | | |
+| `best_config.json` (`score_thr=0.5`, `min_points=0`) | 10 | 11 | 12 | 20.0 |
+| Dự đoán trước sweep (`score_thr=0.4`, `min_points=5`) | 27 | 9 | 13 | 23.6 |
 
-- Tham số đã đổi trong `best_config.json`: ...
-- Kết quả leave-one-out (dán các dòng `scripts/pp_sweep.py` in ra): ...
+- Tham số đã đổi trong `best_config.json`: `score_thr: 0.1 → 0.5`; các tham số khác giữ cấu hình gốc. `score_thr=0.5, min_points=5` đồng hạng 20.0; script lưu cấu hình `min_points=0` vì xuất hiện trước trong thứ tự thử.
+- Kết quả leave-one-out từ script:
+
+| Frame bỏ ra | Cấu hình chọn trên 2 frame còn lại | Chi phí trên frame bỏ ra | Oracle trong lưới |
+|---|---|---:|---:|
+| s01f44 | score_thr=0.5, min_points=0 | 11.4 | 11.4 |
+| s03f41 | score_thr=0.5, min_points=0 | 3.8 | 3.8 |
+| s04f47 | score_thr=0.5, min_points=0 | 4.8 | 4.8 |
+
+- Số đo tự động: ba lượt đều chọn cùng cấu hình và đạt chi phí bằng oracle trong lưới đã thử. Điều này chỉ mô tả ba frame A, chưa đo khả năng tổng quát trên B.
+
 - Cấu hình có ổn định trên từng frame không? Vì sao tôi vẫn chọn (hoặc không chọn) nó: ...
 
 ## 3. Trước/sau (bước 8)
 
-![so sánh](../../d14_217/compare/<frame>.jpg)
+![so sánh s01f44](../../d14_217/compare/s01f44.jpg)
 
-- `scripts/pp_compare.py` báo giảm (hoặc tăng) ...% công sửa trên tập A.
+- Số đo sweep: chi phí gốc 34.6; cấu hình chọn 20.0; mức giảm 42.2% trên tập A. Đây là chi phí theo công thức, không phải thời gian lao động. Cấu hình dự đoán 0.4/5 có chi phí 23.6, giảm 31.8%.
 - Dự đoán ở mục 1 đúng hay sai? Giải thích bằng số box xóa/thêm/sửa: ...
 
 ## 4. Tập B

@@ -1,0 +1,34 @@
+15 cấu hình × 3 frame
+  {'score_thr': '0.1', 'min_points': '0'}  → chi phí 34.6
+  {'score_thr': '0.1', 'min_points': '5'}  → chi phí 33.4
+  {'score_thr': '0.1', 'min_points': '10'}  → chi phí 33.6
+  {'score_thr': '0.2', 'min_points': '0'}  → chi phí 33.0
+  {'score_thr': '0.2', 'min_points': '5'}  → chi phí 32.4
+  {'score_thr': '0.2', 'min_points': '10'}  → chi phí 32.9
+  {'score_thr': '0.3', 'min_points': '0'}  → chi phí 29.4
+  {'score_thr': '0.3', 'min_points': '5'}  → chi phí 28.8
+  {'score_thr': '0.3', 'min_points': '10'}  → chi phí 29.3
+  {'score_thr': '0.4', 'min_points': '0'}  → chi phí 23.9
+  {'score_thr': '0.4', 'min_points': '5'}  → chi phí 23.6
+  {'score_thr': '0.4', 'min_points': '10'}  → chi phí 24.1
+  {'score_thr': '0.5', 'min_points': '0'}  → chi phí 20.0
+  {'score_thr': '0.5', 'min_points': '5'}  → chi phí 20.0
+  {'score_thr': '0.5', 'min_points': '10'}  → chi phí 20.5
+
+Top 10 (ghi đủ ở d14_217\sweep.csv):
+    20.00  xóa  10 thêm  11 sửa  12  {'score_thr': '0.5', 'min_points': '0'}
+    20.00  xóa  10 thêm  11 sửa  12  {'score_thr': '0.5', 'min_points': '5'}
+    20.50  xóa  10 thêm  12 sửa  11  {'score_thr': '0.5', 'min_points': '10'}
+    23.60  xóa  27 thêm   9 sửa  13  {'score_thr': '0.4', 'min_points': '5'}
+    23.90  xóa  28 thêm   9 sửa  13  {'score_thr': '0.4', 'min_points': '0'}
+    24.10  xóa  27 thêm  10 sửa  12  {'score_thr': '0.4', 'min_points': '10'}
+    28.80  xóa  51 thêm   6 sửa  15  {'score_thr': '0.3', 'min_points': '5'}
+    29.30  xóa  51 thêm   7 sửa  14  {'score_thr': '0.3', 'min_points': '10'}
+    29.40  xóa  53 thêm   6 sửa  15  {'score_thr': '0.3', 'min_points': '0'}
+    32.40  xóa  63 thêm   6 sửa  15  {'score_thr': '0.2', 'min_points': '5'}
+Cấu hình tốt nhất → d14_217\best_config.json
+
+Leave-one-out (chọn trên các frame còn lại, chấm trên frame bỏ ra):
+  s01f44: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 11.4 (tốt nhất có thể 11.4)
+  s03f41: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 3.8 (tốt nhất có thể 3.8)
+  s04f47: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 4.8 (tốt nhất có thể 4.8)
