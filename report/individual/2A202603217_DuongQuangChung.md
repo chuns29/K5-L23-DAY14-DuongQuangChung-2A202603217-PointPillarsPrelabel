@@ -60,7 +60,7 @@
 - Dùng camera và LiDAR đối chiếu hộp; thêm Bus/Truck, người và xe hai bánh bị sót; sửa lớp/kích thước/đáy ở các trường hợp đủ căn cứ. Chi tiết trong `d14_217/review_B_audit.json`.
 - Đã xóa 9 hộp LOW_VISIBILITY theo yêu cầu người học: s03f21 (`pp_id` 9, 11); s05f05 (11, 13, 14, 16, 17); s05f31 (2, 13). Đây là quyết định loại hộp khó xác nhận, không chứng minh vật thể không tồn tại. Nhãn B có hỗ trợ AI và cần người học kiểm trước khi nộp.
 
-Số đo tính lại bằng `vf_pp.core.correction_cost` từ dự đoán đã lưu `pred_B.json` (cấu hình đã chọn trên A) và `ref_B.json` sau khi xóa 9 hộp; không chạy lại hay tune model:
+Số đo được xác nhận lại bằng lệnh chính thức `scripts/pp_prelabel.py --frames d14_217/frames_B.txt --config d14_217/best_config.json --gt d14_217/ref_B.json` (kèm `--data` trỏ tới Data-VF), sau khi xóa 9 hộp. Giữ cấu hình chọn từ A, không tune lại trên B. Log: `d14_217/cost_B_log.txt`.
 
 | Xóa | Thêm | Sửa | Chi phí |
 |---:|---:|---:|---:|
